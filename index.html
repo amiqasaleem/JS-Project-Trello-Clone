@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Upper Navbar -->
+    <div class="navbar">
+        <div class="left-side">
+            <div class="menu-icon"><img src="images/menu.svg"></div>
+            <div class="trello-icon"><i class="fa-solid fa-chart-simple"></i> Trello</div>
+            <div class="list">Workspaces <i class="fa-solid fa-angle-down"></i></div>
+            <div class="list">Recent <i class="fa-solid fa-angle-down"></i></div>
+            <div class="list">Starred <i class="fa-solid fa-angle-down"></i></div>
+            <div class="list">Templates <i class="fa-solid fa-angle-down"></i></div>
+            <button class="create-btn">Create</button>
+        </div>
+        <div class="right-side">
+            <div class="input-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search" placeholder="Search">
+            </div>
+            <div class="icons"><i class="fa-regular fa-bell"></i></div>
+            <div class="icons"><i class="fa-regular fa-circle-question"></i></div>
+            <div class="icons as-profile">AS</div>
+        </div>
+    </div>
+
+    <!-- Lower Navbar -->
+
+    <div class="workspace-nav">
+        <div class="extreme-left-side">
+            <div class="left-side-div">
+                <div class="T-div">
+                    T
+                </div>
+                <div class="center-div">
+                    <p class="center-div-p1">Trello Workspace</p>
+                    <p class="center-div-p2">Free</p>
+                </div>
+            </div>
+            <div class="icon-cross">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+           
+        </div>
+        <div class="rigt-side-part">
+            <div class="middle-side">
+                <p>My Work board</p>
+                <div class="star-icon"><i class="fa-regular fa-star"></i></div>
+                <div class="people-icon"><i class="fa-solid fa-users"></i></div>
+                <button class="board-btn"><i class="fa-solid fa-bars-progress"></i> Board</button>
+                <div class="down-arrow"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="extreme-right-side">
+                <div class="up-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                <div class="power-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="filter">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <p>Filters</p>
+                </div>
+                <div class="profile">AS</div>
+                <button id="share-btn"><i class="fa-solid fa-user-plus"></i>Share</button>
+                <div class="more-icon"><i class="fa-solid fa-ellipsis"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main-content -->
+    <div class="main-content">
+        <div class="left-main">
+            <div class="paras">
+            <p><i class="fa-solid fa-chart-simple left-icons"></i> Boards</p><br>
+            <p><i class="fa-solid fa-users left-icons"></i> Members</p><br>
+            <p><i class="fa-solid fa-gear left-icons"></i> Workspace Settings</p><br>
+            <p id="work">Workspace views</p><br>
+            <p><i class="fa-solid fa-table-columns left-icons"></i> Table</p><br>
+            <p><i class="fa-solid fa-calendar-days left-icons"></i> Calender</p><br>
+            </div>
+            <div class="work-div">
+                <p id="mywork">My work board</p>
+            </div>
+        </div>
+        <div class="right-main">
+
+            <div class="left-todo">
+                <p>To-do</p> 
+                <ul id="list-container01" class="todo-list">
+                    <!-- <li class="list-item"></li> -->
+                </ul>
+                <div class="row">
+                    <input type="text" id="input-box01" placeholder="+ Add a Card" class="inputboxx">
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+            <div class="middle-todo">
+                <p>Doing</p>
+                <ul id="list-container02" class="todo-list">
+                    <!-- <li class="list-item"></li> -->
+                </ul>
+                <div class="row">
+                    <input type="text" id="input-box02" placeholder="+ Add a Card" class="inputboxx">
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+            <div class="right-todo">
+                <p>Done</p>
+                <ul id="list-container03" class="todo-list">
+                    <!-- <li class="list-item"></li> -->
+                </ul>
+                <div class="row">
+                    <input type="text" id="input-box03" placeholder="+ Add a Card" class="inputboxx">
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
